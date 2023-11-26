@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap");
+* {
+  font-family: "Montserrat";
+  color: rgb(226, 226, 226);
+  box-sizing: border-box;
+}
+
+:root {
+  --maintextcolor: #b0b0b0;
+  --maintitlecolor: #b0b0b0;
+  --mainbgcolor: #191919;
+  --btnbgcolor: #00ff22;
+  --btnboxshadow: #fff;
+  --btnbgcolor2: rgba(65, 255, 68, 0.147);
+  --btntextcolor: rgb(254, 254, 254);
+  --txtshadow: rgb(255, 255, 255);
+  --txtherobanner: rgb(237, 237, 237);
+  --txtherobannersub: rgb(220, 220, 220);
+  --txthovercolor: rgb(255, 255, 255);
+}

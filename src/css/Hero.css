@@ -1,0 +1,65 @@
+@import url("../css/MyRoot.css");
+
+.velkommen_div {
+  height: 95vh;
+  background-image: url("../pics/a.modified.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 4px 4px 10px black;
+  padding: 2rem;
+  background-color: var(--mainbgcolor);
+}
+
+.elevating_txt {
+  font-size: 2.5rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.shoppen_btn {
+  font-size: clamp(16px, 1.5vw, 2rem);
+
+  padding: 0.75rem; /* Default padding */
+  margin: 1rem auto;
+  border-radius: 1.25rem;
+  color: var(--btntextcolor);
+  border: 4px;
+  border-style: solid;
+  border-color: white;
+  cursor: pointer;
+  box-shadow: 0 0 15px var(--btnboxshadow);
+  transition: 0.4s;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.shoppen_btn:hover {
+  background: var(--btnbgcolor);
+  box-shadow: 0 0 50px var(--btnboxshadow);
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .velkommen_div {
+    height: 50vh;
+    font-size: 1.25rem;
+  }
+  .elevating_txt {
+    font-size: 1rem;
+  }
+
+  .shoppen_btn {
+    width: 90px;
+    font-size: 0.75rem;
+  }
+}

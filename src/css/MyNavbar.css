@@ -1,0 +1,117 @@
+@import url("../css/MyRoot.css");
+
+.main_header {
+  position: relative;
+  display: flex;
+  background: linear-gradient(black, var(--mainbgcolor), black);
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  opacity: 95%;
+  padding: 0 2rem;
+}
+
+.links_corelines_logo {
+  max-width: 150px;
+}
+
+.links_div_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.links_div_container * {
+  margin: 0 2.5rem 0rem 0;
+  text-decoration: none;
+  color: var(--maintitlecolor);
+  vertical-align: middle;
+  font-size: 1.25rem;
+}
+
+.link_in_div_container {
+  transition: 0.3s;
+}
+
+.link_in_div_container:hover {
+  font-size: 1.275rem;
+  color: var(--txthovercolor);
+}
+
+.links_cart_logo {
+  max-height: 45px;
+  margin: 0;
+}
+
+.icons-checkbox {
+  color: var(--maintitlecolor);
+  cursor: pointer;
+}
+
+#menu-checkbox {
+  display: none;
+}
+
+.icons-checkbox {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 30%;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .icons-checkbox {
+    display: block;
+  }
+  .links_div_container {
+    position: absolute;
+    flex-direction: column;
+    top: 0%;
+    background: url("../pics/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    width: 100%;
+    z-index: -1;
+    gap: 0;
+    height: 0px;
+    opacity: 0;
+    font-size: 0;
+    transition: all 0.3s;
+    justify-content: center;
+    padding-top: 4rem;
+  }
+
+  .link_in_div_container {
+    transition: 0s;
+  }
+
+  .links_div_container * {
+    display: block;
+    margin: 0.125rem;
+  }
+
+  .menu-close-icon {
+    display: none;
+  }
+
+  #menu-checkbox:checked ~ .icons-checkbox .menu-open-icon {
+    display: none;
+  }
+
+  #menu-checkbox:checked ~ .icons-checkbox .menu-close-icon {
+    display: block;
+  }
+  #menu-checkbox:checked ~ .links_div_container {
+    height: 27.5rem;
+    opacity: 1;
+    gap: 1.5rem;
+    font-size: 1.125rem;
+  }
+
+  .main_header {
+    padding: 0;
+  }
+}

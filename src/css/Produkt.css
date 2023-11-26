@@ -1,0 +1,57 @@
+@import url("../css/MyRoot.css");
+.produkter_main_div {
+  background-color: var(--mainbgcolor);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.produkter_main_div h1 {
+  color: var(--maintitlecolor);
+}
+.produkter_main_div h2 {
+  color: var(--maintextcolor);
+  font-size: 1.25rem;
+}
+
+.produkt_ {
+  flex: 1;
+}
+
+.produkt_img_homepage {
+  max-width: 300px;
+}
+
+.produkt_div {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem auto;
+}
+
+.se_produkt_btn {
+  font-size: clamp(16px, 1.5vw, 2rem);
+
+  padding: 0.125rem; /* Default padding */
+  margin: 1rem auto;
+  border-radius: 1.25rem;
+  color: var(--btntextcolor);
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  cursor: pointer;
+  box-shadow: 0 0 15px var(--btnboxshadow);
+  transition: 0.4s;
+  font-weight: 200;
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0.25rem 1rem;
+}
+
+.se_produkt_btn:hover {
+  background: rgba(255, 255, 255, 0.421);
+  box-shadow: 0 0 10px var(--btnboxshadow);
+  letter-spacing: 0.05em;
+}

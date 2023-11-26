@@ -1,0 +1,28 @@
+@import url("../css/MyRoot.css");
+
+.introducerer_div {
+  background-color: var(--mainbgcolor);
+  padding: 2rem 0;
+}
+
+.introducerer_div > h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--maintextcolor);
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+}
+.introducerer_txt_long {
+  font-size: 1.15rem;
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  color: var(--maintextcolor);
+}
+
+@media (max-width: 768px) {
+  .introducerer_txt_long {
+    font-size: 1rem;
+  }
+}
